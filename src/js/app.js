@@ -35,10 +35,24 @@ const character = {
 	level: 3,
 	attack: 40,
 	defence: 10,
+	special: [
+		{
+			id: 8,
+			name: 'Двойной выстрел',
+			icon: 'http://...',
+			description: 'Двойной выстрел наносит двойной урон'
+		},
+		{
+			id: 9,
+			name: 'Нокаутирующий удар',
+			icon: 'http://...'
+			// <- обратите внимание, описание "засекречено"
+		}
+	]
 
 }
 
-export function getDescription({ special = [] } = Obj) {
+export function getDescription({ special = [] }) {
 	let result = [];
 
 	for (let i = 0; i < special.length; i += 1) {
