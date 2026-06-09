@@ -10,7 +10,7 @@ test("sort", () => {
 	)
 
 });
-test("description ", () => {
+test("description", () => {
 	expect(
 		getDescription({
 			special: [
